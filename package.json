@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Website project, using the BEM method, SASS and transition animations. Mobile-First production.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss ./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guillaume-Gozillon/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guillaume-Gozillon/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Guillaume-Gozillon/ohmyfood#readme"
+}
