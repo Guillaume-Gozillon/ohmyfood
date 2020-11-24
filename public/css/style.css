@@ -2,4 +2,34 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  margin: 0%;
+}
+
+img {
+  width: 200px;
+}
+
+.main_header {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 12px;
+  background-color: rosybrown;
+}
+
+.container__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  background-color: rgba(128, 128, 128, 0.562);
+}
+.container__location p {
+  margin-left: 10px;
+}
+
+.headline__container {
+  background-color: rgba(76, 0, 130, 0.164);
+}
+
 /*# sourceMappingURL=style.css.map */
