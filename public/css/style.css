@@ -21,14 +21,29 @@ img {
   box-shadow: none;
 }
 
-h1 {
-  font-size: 1.5em;
+.container__cta {
+  background-color: burlywood;
+  height: 440px;
+}
+.container__cta .container__cta--title {
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+.container__cta .btn__menu {
+  background-color: blueviolet;
+  display: flex;
 }
 
 .main_header {
   text-align: center;
   width: 100%;
-  padding: 20px 0 12px;
+  height: 20px;
+  padding: 20px 0;
+  box-shadow: 3px 0px 8px 5px rgba(0, 0, 0, 0.1);
+}
+.main_header .header__logo {
+  width: 38%;
 }
 
 .container__location {
@@ -36,7 +51,7 @@ h1 {
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  background-color: rgba(128, 128, 128, 0.185);
+  background-color: rgba(112, 43, 43, 0.185);
 }
 .container__location p {
   margin-left: 10px;
@@ -54,6 +69,7 @@ h1 {
 }
 .headline__container h1 {
   margin: 0;
+  font-size: 1.5em;
 }
 .headline__container h2 {
   margin: 0;

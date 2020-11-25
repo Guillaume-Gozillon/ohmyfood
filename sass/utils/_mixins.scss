@@ -1,0 +1,5 @@
+@mixin header-secondary($size:$secondary-title-size) {
+    margin: 0;
+    font-size: $size;
+    font-weight: 100;    
+}
