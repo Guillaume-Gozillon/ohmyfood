@@ -1,0 +1,10 @@
+.btn{
+    background: linear-gradient(-10deg, $colour-primary 20%, $colour-secondary);
+    padding: 1px 25px;
+    border-radius: 50px;
+    color: white;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.24);
+    &:hover{
+        box-shadow: none;
+    }
+}
