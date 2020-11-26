@@ -25,20 +25,6 @@ img {
   box-shadow: none;
 }
 
-.container__cta {
-  background-color: burlywood;
-  height: 440px;
-}
-.container__cta .container__cta--title {
-  margin: 0;
-  font-size: 1.3em;
-  font-weight: 100;
-}
-.container__cta .btn__menu {
-  background-color: blueviolet;
-  display: flex;
-}
-
 .main_header {
   text-align: center;
   width: 100%;
@@ -73,13 +59,58 @@ img {
 }
 .headline__container h1 {
   margin: 0;
-  font-size: 1.45em;
+  font-size: 1.5em;
 }
 .headline__container .headline__container--secondary {
   margin: 0;
   font-size: 1.05em;
   font-weight: 100;
   font-weight: 300;
+}
+
+.container__cta {
+  height: 390px;
+}
+.container__cta .container__cta--title {
+  margin: 45px 0 40px 25px;
+  font-size: 1.45em;
+  font-weight: 600;
+}
+.container__cta .btn__menu {
+  background-color: #F5F5F5;
+  display: flex;
+  width: 82%;
+  height: 72px;
+  box-shadow: 0px 3px 16px 3px rgba(0, 0, 0, 0.12);
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 21px;
+}
+.container__cta .btn__menu i {
+  margin-right: 40px;
+}
+.container__cta .btn__menu:hover {
+  background-color: #9356dc21;
+}
+
+.btn__menu--absolute {
+  position: absolute;
+  top: 24px;
+  left: -12px;
+  background-color: #9356DC;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+.btn__menu--absolute p {
+  margin: 4px 0 0 8px;
+}
+
+.container__general {
+  background-color: #F5F5F5;
 }
 
 /*# sourceMappingURL=style.css.map */

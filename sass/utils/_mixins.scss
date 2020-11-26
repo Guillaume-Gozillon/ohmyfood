@@ -3,3 +3,9 @@
     font-size: $size;
     font-weight: 100;    
 }
+
+@mixin header_title {
+    margin: 45px 0 40px 25px;
+    font-size: 1.45em;
+    font-weight: 600;    
+}
