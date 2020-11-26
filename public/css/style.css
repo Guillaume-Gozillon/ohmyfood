@@ -77,4 +77,8 @@ img {
   font-weight: 100;
 }
 
+svg path {
+  fill: red;
+}
+
 /*# sourceMappingURL=style.css.map */
