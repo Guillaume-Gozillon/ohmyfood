@@ -28,11 +28,28 @@
             object-fit: cover;
         }
 
+        & i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4em;
+        }
+
         &__paragraphe{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 50px;
+            height: 45px;
+
+            & p:first-child{
+                font-weight: 600;
+                font-size: 1.1em;
+            }
+
+            & p:last-child{
+                font-weight: 300;
+                font-size: 1.1em;
+            }
         }
 
         & p{
