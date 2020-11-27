@@ -79,8 +79,8 @@ img {
 .container__cta .btn__menu {
   background-color: #F5F5F5;
   display: flex;
-  width: 82%;
-  height: 72px;
+  width: 340px;
+  height: 70px;
   box-shadow: 0px 3px 16px 3px rgba(0, 0, 0, 0.12);
   justify-content: center;
   align-items: center;
