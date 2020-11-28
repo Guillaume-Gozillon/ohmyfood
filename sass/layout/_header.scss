@@ -47,7 +47,7 @@
     & .btn__menu{
         background-color: $colour-lightgrey;
         display: flex;
-        width: 340px;
+        width: 325px;
         height: 70px;
         box-shadow: 0px 3px 16px 3px rgba(0,0,0,0.12);
         justify-content: center;
@@ -55,11 +55,21 @@
         margin: 20px auto;
         position: relative;
         border-radius: 21px;
+        color: rgba(0, 0, 0, 0.774);
         & i{
-            margin-right: 40px;
+            margin-right: 25px;
+            font-size: 1.1em;
+        }
+
+        & p{
+            margin-right: 30px;
         }
         &:hover{
             background-color: #9356dc21;
+            color: $colour-primary;
+            & p:nth-child(2){
+                color: rgb(0, 0, 0);
+            }
         }
     }
 }

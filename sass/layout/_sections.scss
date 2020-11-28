@@ -35,6 +35,10 @@
             font-size: 1.4em;
         }
 
+        &:hover{
+            box-shadow: none;
+        }
+
         &__paragraphe{
             display: flex;
             flex-direction: column;
