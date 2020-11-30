@@ -1,5 +1,6 @@
 .container__general{
     background-color: $colour-lightgrey;
+    padding-bottom: 20px;
     & .headline-two{
         padding: 50px 0px 8px 20px;
     }
@@ -8,7 +9,7 @@
         position: relative;
         height: 253px;
         background-color:white;
-        margin: 20px auto;
+        margin: 20px auto 0;
         border-radius: 15px;
         display: flex;
         flex-direction: column;

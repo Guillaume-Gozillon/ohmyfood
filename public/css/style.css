@@ -133,6 +133,7 @@ img {
 
 .container__general {
   background-color: #F5F5F5;
+  padding-bottom: 20px;
 }
 .container__general .headline-two {
   padding: 50px 0px 8px 20px;
@@ -142,7 +143,7 @@ img {
   position: relative;
   height: 253px;
   background-color: white;
-  margin: 20px auto;
+  margin: 20px auto 0;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -228,6 +229,96 @@ footer .footer__menu a {
 }
 footer .footer__menu a:hover {
   text-decoration: underline white;
+}
+
+.main_nav {
+  position: relative;
+}
+.main_nav img {
+  object-fit: cover;
+  width: 100%;
+}
+.main_nav i {
+  position: absolute;
+  top: 26px;
+  left: 40px;
+  font-size: 1.2em;
+}
+
+.menu_section {
+  border-radius: 35px 35px 0 0;
+  background-color: #F5F5F5;
+  margin-top: -35px;
+  position: relative;
+}
+.menu_section .menu_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px 0;
+  margin: auto;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.2em;
+}
+
+.blocmenu__title {
+  margin-left: 20px;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.795);
+  font-size: 1.1em;
+  position: relative;
+}
+.blocmenu__title::after {
+  content: "";
+  background: #99E2D0;
+  width: 50Px;
+  height: 3px;
+  position: absolute;
+  top: 25px;
+  display: block;
+}
+
+.containermenu {
+  color: rgba(0, 0, 0, 0.801);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  margin: 15px auto;
+  padding: 3px;
+  height: 60px;
+  width: 340px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 16px 3px rgba(0, 0, 0, 0.082);
+}
+.containermenu p {
+  margin: 7px;
+}
+.containermenu p:first-child {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.containermenu__price {
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.9em;
+  height: 100%;
+  margin-right: 0px;
+}
+.containermenu__checked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 57px;
+  background-color: red;
+  position: absolute;
+  right: 0px;
+  font-size: 1.3em;
 }
 
 /*# sourceMappingURL=style.css.map */
