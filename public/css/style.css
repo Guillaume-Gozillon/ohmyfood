@@ -294,9 +294,19 @@ footer .footer__menu a:hover {
   width: 340px;
   border-radius: 15px;
   box-shadow: 0px 3px 16px 3px rgba(0, 0, 0, 0.082);
+  cursor: pointer;
+}
+.containermenu__content {
+  width: max-content;
+}
+.containermenu__content p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .containermenu p {
   margin: 7px;
+  width: 285px;
 }
 .containermenu p:first-child {
   font-size: 1.1em;
@@ -307,18 +317,31 @@ footer .footer__menu a:hover {
   align-items: flex-end;
   font-size: 0.9em;
   height: 100%;
-  margin-right: 0px;
+  width: 40px;
 }
 .containermenu__checked {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
   height: 70px;
   width: 57px;
-  background-color: red;
+  background-color: #99E2D0;
   position: absolute;
-  right: 0px;
+  right: -57px;
   font-size: 1.3em;
+}
+.containermenu:hover p {
+  transition: width 300ms ease-in-out;
+  width: 230px;
+}
+.containermenu:hover > div:nth-child(2) {
+  margin-right: 57px;
+  transition: margin 300ms ease-in-out;
+}
+.containermenu:hover > div:nth-child(3) {
+  margin-right: 57px;
+  transition: margin 300ms ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
