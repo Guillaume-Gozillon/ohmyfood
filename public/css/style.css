@@ -237,12 +237,17 @@ footer .footer__menu a:hover {
 .main_nav img {
   object-fit: cover;
   width: 100%;
+  max-height: 50vh;
 }
 .main_nav i {
   position: absolute;
   top: 26px;
   left: 40px;
   font-size: 1.2em;
+}
+
+.blocmenu:last-child {
+  padding-bottom: 30px;
 }
 
 .menu_section {
@@ -259,13 +264,16 @@ footer .footer__menu a:hover {
   margin: auto;
   font-family: "Shrikhand", cursive;
   font-size: 1.2em;
+  max-width: 337px;
+  margin: auto;
 }
 
 .blocmenu__title {
-  margin-left: 20px;
   padding-bottom: 3px;
   text-transform: uppercase;
   font-weight: 300;
+  max-width: 337px;
+  margin: auto;
   color: rgba(0, 0, 0, 0.795);
   font-size: 1.1em;
   position: relative;
@@ -307,6 +315,7 @@ footer .footer__menu a:hover {
 .containermenu p {
   margin: 7px;
   width: 285px;
+  transition: width 300ms ease-in-out;
 }
 .containermenu p:first-child {
   font-size: 1.1em;
@@ -318,6 +327,7 @@ footer .footer__menu a:hover {
   font-size: 0.9em;
   height: 100%;
   width: 40px;
+  transition: margin 300ms ease-in-out;
 }
 .containermenu__checked {
   display: flex;
@@ -330,6 +340,7 @@ footer .footer__menu a:hover {
   position: absolute;
   right: -57px;
   font-size: 1.3em;
+  transition: margin 300ms ease-in-out;
 }
 .containermenu:hover p {
   transition: width 300ms ease-in-out;
