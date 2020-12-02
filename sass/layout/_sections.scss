@@ -77,3 +77,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.bloc__separator svg{
+    fill: red;
+    overflow: hidden;
+    & path{
+        fill:red;
+        background-color: red;
+        background: red;
+    }
+}

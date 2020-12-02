@@ -3,26 +3,37 @@ footer{
     background-color: #2E2E2E;
     color: white;
     #footer__logo{
-        width: 25%;
+        width: 28%;
         padding: 15px 0 10px 15px;
         & path{
             fill: white;
         }
     }
-
     & .footer__menu{
         padding-left: 20px;
-& div{
-    margin-top: 7px;
-}
-
+        & div{
+        margin-top: 7px;
+        }
+        & i{
+            width: 20px;
+            padding-right: 7px;
+        }
         & a{
             text-decoration: none;
             color: white;
             margin-top: 30px;
-            &:hover{
-                text-decoration: underline white;
-            }
+            &::after {
+                content: '';
+                width: 0px;
+                height: 1px;
+                display: block;
+                background: white;
+                transition: 300ms;
+              }
+            &:hover::after {
+                width: 57%;
+              }
         }
     }
 }
+

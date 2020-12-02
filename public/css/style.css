@@ -42,11 +42,11 @@ img {
   text-align: center;
   width: 100%;
   height: 20px;
-  padding: 20px 0;
+  padding: 20px 0 23px;
   box-shadow: 3px 0px 8px 5px rgba(80, 80, 80, 0.2);
 }
 .main_header svg {
-  width: 40%;
+  width: 43%;
 }
 
 .container__location {
@@ -58,6 +58,11 @@ img {
 }
 .container__location p {
   margin-left: 10px;
+}
+
+.middle {
+  max-width: 370px;
+  margin: auto;
 }
 
 .headline__container {
@@ -111,6 +116,8 @@ img {
 }
 .container__cta .btn__menu:hover {
   background-color: #9356dc21;
+}
+.container__cta .btn__menu:hover i {
   color: #9356DC;
 }
 .container__cta .btn__menu:hover p:nth-child(2) {
@@ -204,13 +211,23 @@ img {
   align-items: center;
 }
 
+.bloc__separator svg {
+  fill: red;
+  overflow: hidden;
+}
+.bloc__separator svg path {
+  fill: red;
+  background-color: red;
+  background: red;
+}
+
 footer {
   height: 190px;
   background-color: #2E2E2E;
   color: white;
 }
 footer #footer__logo {
-  width: 25%;
+  width: 28%;
   padding: 15px 0 10px 15px;
 }
 footer #footer__logo path {
@@ -222,13 +239,25 @@ footer .footer__menu {
 footer .footer__menu div {
   margin-top: 7px;
 }
+footer .footer__menu i {
+  width: 20px;
+  padding-right: 7px;
+}
 footer .footer__menu a {
   text-decoration: none;
   color: white;
   margin-top: 30px;
 }
-footer .footer__menu a:hover {
-  text-decoration: underline white;
+footer .footer__menu a::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: white;
+  transition: 300ms;
+}
+footer .footer__menu a:hover::after {
+  width: 57%;
 }
 
 .main_nav {
