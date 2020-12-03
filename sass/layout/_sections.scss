@@ -4,7 +4,7 @@
     & .headline-two{
         padding: 50px 0px 8px 20px;
     }
-    .bloc{
+    & .bloc{
         width: 330px;
         position: relative;
         height: 253px;
@@ -15,12 +15,15 @@
         flex-direction: column;
         overflow: hidden;
         box-shadow: 0px 3px 16px 3px rgba(0,0,0,0.12);
+        text-decoration: none;
+        color: black;
         & .bloc__separator{
             display: flex;
             width: 100%;
             justify-content: space-between;
             max-width: 297px;
             margin: auto;
+            position: relative;
         }
 
         & img{
@@ -37,7 +40,11 @@
         }
 
         &:hover{
-            box-shadow: none;
+            box-shadow: 0px 3px 16px 3px rgba(0, 0, 0, 0.42);
+        }
+
+        & p{
+            margin: 0;
         }
 
         &__paragraphe{
@@ -55,10 +62,6 @@
                 font-weight: 300;
                 font-size: 1.1em;
             }
-        }
-
-        & p{
-            margin: 0;
         }
     }
 }
@@ -78,12 +81,18 @@
     align-items: center;
 }
 
-.bloc__separator svg{
-    fill: red;
-    overflow: hidden;
-    & path{
-        fill:red;
-        background-color: red;
-        background: red;
+.full{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    opacity: 0;
+    background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: opacity 250ms;
+    &:hover{
+        cursor: pointer;
+        opacity: 1;
     }
 }
