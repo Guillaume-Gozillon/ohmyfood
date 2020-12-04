@@ -303,6 +303,40 @@ footer .footer__menu a:hover::after {
   font-size: 1.2em;
 }
 
+.blocmenu:nth-child(2) {
+  transform: translateY(20px);
+  animation-name: arrive;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 300ms;
+}
+
+.blocmenu:nth-child(3) {
+  transform: translateY(20px);
+  animation-name: arrive;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 600ms;
+}
+
+.blocmenu:nth-child(4) {
+  transform: translateY(20px);
+  animation-name: arrive;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 900ms;
+}
+
+@keyframes arrive {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .blocmenu:last-child {
   padding-bottom: 30px;
 }
@@ -338,13 +372,24 @@ footer .footer__menu a:hover::after {
 .blocmenu__title::after {
   content: "";
   background: #99E2D0;
-  width: 50Px;
   height: 3px;
   position: absolute;
   top: 25px;
   display: block;
+  animation-name: underline;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 900ms;
 }
 
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50Px;
+  }
+}
 .containermenu {
   color: rgba(0, 0, 0, 0.801);
   display: flex;
