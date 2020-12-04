@@ -17,6 +17,7 @@ img {
   color: white;
   position: relative;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 200ms ease-in-out;
   cursor: pointer;
 }
 .btn p {
@@ -27,7 +28,7 @@ img {
   color: white;
 }
 .btn:hover {
-  box-shadow: none;
+  box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.32);
 }
 
 .links {
@@ -109,6 +110,9 @@ img {
   cursor: pointer;
   z-index: 1;
 }
+.container__cta .btn__menu:hover {
+  box-shadow: 0px 3px 16px 3px rgba(0, 0, 0, 0.1);
+}
 .container__cta .btn__menu:hover::after {
   opacity: 0.15;
 }
@@ -123,7 +127,7 @@ img {
   background-color: #9356DC;
   z-index: -1;
   opacity: 0;
-  transition: opacity 250ms;
+  transition: opacity 270ms;
 }
 .container__cta .btn__menu i {
   margin-right: 25px;
@@ -170,6 +174,7 @@ img {
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0px 3px 16px 3px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 300ms ease-in-out;
   text-decoration: none;
   color: black;
 }
@@ -393,6 +398,13 @@ footer .footer__menu a:hover::after {
   right: -57px;
   font-size: 1.3em;
   transition: margin 300ms ease-in-out;
+}
+.containermenu__checked i {
+  transform: rotate(0deg);
+  transition: transform 420ms ease;
+}
+.containermenu:hover i {
+  transform: rotate(360deg);
 }
 .containermenu:hover p {
   transition: width 300ms ease-in-out;

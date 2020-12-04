@@ -108,7 +108,14 @@
         right: -57px;
         font-size: $secondary-title-size;
         transition: margin 300ms ease-in-out;
+        & i{
+            transform: rotate(0deg);
+            transition: transform 420ms ease;
+        }
     }
+    &:hover i{
+        transform: rotate(360deg);
+}
     &:hover p{
         transition: width 300ms ease-in-out;
         width: 230px;
@@ -123,3 +130,4 @@
         transition: margin 300ms ease-in-out;
     }
 }
+

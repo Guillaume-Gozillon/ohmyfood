@@ -5,6 +5,7 @@
     color: white;
     position: relative;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.24);
+    transition: box-shadow 200ms ease-in-out;
     cursor: pointer;
     & p{
         margin: 15px 0;
@@ -14,7 +15,7 @@
         color: white;
     }
     &:hover{
-        box-shadow: none;
+        box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.32)
     }
 }
 
