@@ -26,7 +26,7 @@
     animation-name: arrive;
     animation-duration: 1000ms;
     animation-fill-mode: both;
-    animation-delay: 600ms;
+    animation-delay: 440ms;
 }
 
 .blocmenu:nth-child(4){
@@ -34,7 +34,15 @@
     animation-name: arrive;
     animation-duration: 1000ms;
     animation-fill-mode: both;
-    animation-delay: 900ms;
+    animation-delay: 580ms;
+}
+
+.blocmenu:nth-child(5){
+    transform: translateY(20px);
+    animation-name: arrive;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    animation-delay: 620ms;
 }
 
 

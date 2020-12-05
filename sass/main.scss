@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./libs/responsive.scss";
 
 @import "./base/typography";
 @import "./base/base";
@@ -10,4 +11,4 @@
 @import "./layout/header";
 @import "./layout/sections.scss";
 @import "./layout/footer";
-@import "./layout/francaise"
+@import "./layout/francaise";

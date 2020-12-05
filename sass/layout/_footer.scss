@@ -37,3 +37,15 @@ footer{
     }
 }
 
+
+@media #{$medium-display}{
+    .footer__menu{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: space-around;
+    }
+    footer{
+        height: 130px;
+    }
+}

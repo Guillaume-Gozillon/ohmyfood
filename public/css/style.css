@@ -1,3 +1,11 @@
+@media only screen and (min-width: 1185px) {
+  .theothernew {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -156,6 +164,38 @@ img {
   z-index: 1;
 }
 
+@media only screen and (min-width: 1185px) {
+  .container__cta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: auto;
+    max-width: none;
+  }
+
+  .newnew {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1190px;
+  }
+
+  .thenew {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: auto;
+    justify-content: space-between;
+    height: 630px;
+  }
+
+  .middle {
+    max-width: none;
+  }
+}
 .container__general {
   background-color: #F5F5F5;
   padding-bottom: 20px;
@@ -305,6 +345,18 @@ footer .footer__menu a:hover::after {
   width: 57%;
 }
 
+@media only screen and (min-width: 1185px) {
+  .footer__menu {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  footer {
+    height: 130px;
+  }
+}
 .main_nav {
   position: relative;
 }
@@ -333,7 +385,7 @@ footer .footer__menu a:hover::after {
   animation-name: arrive;
   animation-duration: 1000ms;
   animation-fill-mode: both;
-  animation-delay: 600ms;
+  animation-delay: 440ms;
 }
 
 .blocmenu:nth-child(4) {
@@ -341,7 +393,15 @@ footer .footer__menu a:hover::after {
   animation-name: arrive;
   animation-duration: 1000ms;
   animation-fill-mode: both;
-  animation-delay: 900ms;
+  animation-delay: 580ms;
+}
+
+.blocmenu:nth-child(5) {
+  transform: translateY(20px);
+  animation-name: arrive;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 620ms;
 }
 
 @keyframes arrive {

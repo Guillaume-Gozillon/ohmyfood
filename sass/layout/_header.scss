@@ -110,3 +110,38 @@
         z-index: 1;
     }
 }
+
+
+
+@media #{$medium-display}{
+    .container__cta{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        width: auto;
+        max-width: none;
+    }
+
+    .newnew{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1190px;
+    }
+
+    .thenew{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1140px;
+        margin: auto;
+        justify-content: space-between;
+        height: 630px;
+    }
+
+    .middle{
+        max-width: none;
+    }
+}
