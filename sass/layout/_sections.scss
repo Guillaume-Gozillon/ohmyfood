@@ -97,3 +97,20 @@
         opacity: 1;
     }
 }
+
+.inside{
+    position: absolute;
+    top: 39px;
+    right: 34px;
+    opacity: 0;
+    font-size: 1em;
+    background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: opacity 250ms;
+    &:hover{
+        cursor: pointer;
+        opacity: 1;
+    }
+}
