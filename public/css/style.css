@@ -276,7 +276,7 @@ img {
 .full {
   position: absolute;
   top: 12px;
-  right: 0;
+  right: 0px;
   opacity: 0;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
@@ -289,19 +289,18 @@ img {
   opacity: 1;
 }
 
-.inside {
+.fulled {
   position: absolute;
-  top: 39px;
-  right: 34px;
+  top: 40px;
+  right: 30px;
   opacity: 0;
-  font-size: 1em;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   transition: opacity 250ms;
 }
-.inside:hover {
+.fulled:hover {
   cursor: pointer;
   opacity: 1;
 }
@@ -372,6 +371,13 @@ footer .footer__menu a:hover::after {
   font-size: 1.2em;
 }
 
+.fa-arrow-left {
+  color: black;
+}
+.fa-arrow-left:hover {
+  color: black;
+}
+
 .blocmenu:nth-child(2) {
   transform: translateY(20px);
   animation-name: arrive;
@@ -430,6 +436,7 @@ footer .footer__menu a:hover::after {
   justify-content: space-between;
   padding: 5px 30px 0;
   margin: auto;
+  position: relative;
   font-family: "Shrikhand", cursive;
   font-size: 1.2em;
   max-width: 337px;
@@ -600,7 +607,7 @@ footer .footer__menu a:hover::after {
   50% {
     stroke-dashoffset: 0;
   }
-  50.1% {
+  50.00000001% {
     stroke-dashoffset: 880;
   }
 }
