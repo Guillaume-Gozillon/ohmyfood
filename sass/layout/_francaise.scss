@@ -18,7 +18,7 @@
         animation-name: arrive;
         animation-duration: 1000ms;
         animation-fill-mode: both;
-        animation-delay: 300ms;
+        animation-delay: 3300ms;
     }
 
 .blocmenu:nth-child(3){
@@ -26,7 +26,7 @@
     animation-name: arrive;
     animation-duration: 1000ms;
     animation-fill-mode: both;
-    animation-delay: 440ms;
+    animation-delay: 3440ms;
 }
 
 .blocmenu:nth-child(4){
@@ -34,7 +34,7 @@
     animation-name: arrive;
     animation-duration: 1000ms;
     animation-fill-mode: both;
-    animation-delay: 580ms;
+    animation-delay: 3580ms;
 }
 
 .blocmenu:nth-child(5){
@@ -42,7 +42,7 @@
     animation-name: arrive;
     animation-duration: 1000ms;
     animation-fill-mode: both;
-    animation-delay: 620ms;
+    animation-delay: 3620ms;
 }
 
 
@@ -100,7 +100,7 @@
         animation-name: underline;
         animation-duration: 1000ms;
         animation-fill-mode: both;
-        animation-delay: 900ms;
+        animation-delay: 3900ms;
     }
 }
 
@@ -188,3 +188,8 @@
     }
 }
 
+@media #{$medium-display}{
+    .main_nav img{
+        max-height: 40vh;
+    }
+}

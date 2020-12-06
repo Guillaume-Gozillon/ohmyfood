@@ -377,7 +377,7 @@ footer .footer__menu a:hover::after {
   animation-name: arrive;
   animation-duration: 1000ms;
   animation-fill-mode: both;
-  animation-delay: 300ms;
+  animation-delay: 3300ms;
 }
 
 .blocmenu:nth-child(3) {
@@ -385,7 +385,7 @@ footer .footer__menu a:hover::after {
   animation-name: arrive;
   animation-duration: 1000ms;
   animation-fill-mode: both;
-  animation-delay: 440ms;
+  animation-delay: 3440ms;
 }
 
 .blocmenu:nth-child(4) {
@@ -393,7 +393,7 @@ footer .footer__menu a:hover::after {
   animation-name: arrive;
   animation-duration: 1000ms;
   animation-fill-mode: both;
-  animation-delay: 580ms;
+  animation-delay: 3580ms;
 }
 
 .blocmenu:nth-child(5) {
@@ -401,7 +401,7 @@ footer .footer__menu a:hover::after {
   animation-name: arrive;
   animation-duration: 1000ms;
   animation-fill-mode: both;
-  animation-delay: 620ms;
+  animation-delay: 3620ms;
 }
 
 @keyframes arrive {
@@ -456,7 +456,7 @@ footer .footer__menu a:hover::after {
   animation-name: underline;
   animation-duration: 1000ms;
   animation-fill-mode: both;
-  animation-delay: 900ms;
+  animation-delay: 3900ms;
 }
 
 @keyframes underline {
@@ -539,6 +539,78 @@ footer .footer__menu a:hover::after {
 .containermenu:hover > div:nth-child(3) {
   margin-right: 57px;
   transition: margin 300ms ease-in-out;
+}
+
+@media only screen and (min-width: 1185px) {
+  .main_nav img {
+    max-height: 40vh;
+  }
+}
+.loader {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  animation: disapeareness 4s;
+  animation-fill-mode: forwards;
+}
+.loader svg {
+  animation: disapeareness 5s linear;
+  animation-fill-mode: backwards;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  animation: rotate 2s linear infinite;
+}
+.loader circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke: #99E2D0;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes disapeareness {
+  0% {
+    top: 0;
+  }
+  80% {
+    top: 0;
+  }
+  100% {
+    animation-timing-function: cubic-bezier(0.71, 0.07, 0.83, 0.67);
+    top: -100%;
+  }
+}
+@keyframes animate {
+  0%, 100% {
+    stroke-dashoffset: 440;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  50.1% {
+    stroke-dashoffset: 880;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
